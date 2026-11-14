@@ -14,7 +14,7 @@ if (!existsSync(source)) {
   process.exit(1);
 }
 
-const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "out";
+const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outputDir, { recursive: true });
 
 const destination = join(outputDir, "entry.png");
